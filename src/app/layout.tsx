@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Poder Judicial - NewCooltura Informada",
+  title: "Poder Judicial Chile | NewCooltura Informada",
   description: "Buscador de causas judiciales, estructura del Poder Judicial y guia procesal de Chile",
+  keywords: ["poder judicial", "causas judiciales", "tribunales Chile", "consulta causas", "juzgados"],
+  openGraph: {
+    title: "Poder Judicial Chile - NewCooltura Informada",
+    description: "Consulta de causas y tribunales",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
